@@ -8,7 +8,6 @@ import lombok.*;
 @Setter
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
 @ToString
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Sensor {
