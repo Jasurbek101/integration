@@ -17,7 +17,7 @@ public class UserController {
 
     private final UserService userService;
 
-    @PostMapping
+    @GetMapping
     public ApiResponse<UserEntity> findUser(@RequestBody UserRequestDto user) {
         System.err.println(user);
         UserEntity serviceUser = userService.findUser(user);

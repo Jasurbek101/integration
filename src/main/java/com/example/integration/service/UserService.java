@@ -20,9 +20,9 @@ public class UserService {
 
 
     public UserEntity findUser(UserRequestDto user) {
-        url = String.format(this.url, user.getSeries(), user.getNumber(), user.getBirth_date());
+        String temp = String.format(this.url, user.getSeries(), user.getNumber(), user.getBirth_date());
         try {
-            URL newUrl = new URL(url);
+            URL newUrl = new URL(temp);
             JsonNode jsonNode = jsonService.parse(newUrl);
             JsonNode node = jsonNode.get("data");
             node = node.get("data");
