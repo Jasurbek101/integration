@@ -10,11 +10,9 @@ import lombok.*;
 @ToString
 @Builder
 public class ApiResponse<T>{
-
     private String message;
     private boolean success;
     @JsonIgnore
     private int status;
     private T data;
-
 }

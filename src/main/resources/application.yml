@@ -3,7 +3,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres2
     username: postgres
     password: 2255
-    driver-class-name: org.postgresql.Driver
   jpa:
     show-sql: true
     defer-datasource-initialization: true
@@ -13,4 +12,4 @@ spring:
     init:
       mode: always
 
-url : https://api.realsoft.academy/api/v1/passport?series=%s&number=%s&birth_date=%s
+url : https://api.opensensemap.org/boxes?model=homeWifi
