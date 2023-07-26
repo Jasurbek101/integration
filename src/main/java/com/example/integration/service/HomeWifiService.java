@@ -19,9 +19,7 @@ public class HomeWifiService {
     public List<HomeWifi> getWifesList(){
         try {
             ObjectMapper objectMapper = new ObjectMapper();
-            List<HomeWifi> personList = objectMapper.readValue(new URL(url), new TypeReference<List<HomeWifi>>(){});
-            System.out.println(personList);
-            return personList;
+            return objectMapper.readValue(new URL(url), new TypeReference<List<HomeWifi>>(){});
         } catch (IOException e) {
             System.err.println(e);
             throw new RecordNotFoundException(" List not found");
